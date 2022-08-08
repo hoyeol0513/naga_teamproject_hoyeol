@@ -1,0 +1,55 @@
+.menuBox1 {
+  text-align:center;
+  box-shadow:0 1px 1px #67adb7, 0 2px 2px #67adb7;
+  background-color: white;
+}
+
+/* 1차 메뉴 */
+.menu1 {
+  display:flex;
+  justify-content: space-around;
+  padding:0 20px;
+  border-radius:10px;
+}
+
+/* 1차 메뉴 아이템 */
+.menuItem1 {
+  display:inline-block;
+  position:relative;
+  width:calc(100%/8);
+}
+
+/* 메뉴 아이템 텍스트 */
+.menuBox1 ul > li {
+  padding:10px;
+  display: block;
+  font-weight:bold;
+}
+
+/* 2차 메뉴 */
+.menuBox1 > ul > li > ul {
+  position:absolute;
+  display:none;
+  /* 부모 안에 가둬진 상태에서 밑으로 100% 내리면 부모의 바닥 아래 생성 */
+  top:100%;
+  left:0;
+  z-index: 10;
+}
+.menuBox1 > ul > li > ul {
+  position:absolute;
+  display:none;
+  /* 부모 안에 가둬진 상태에서 밑으로 100% 내리면 부모의 바닥 아래 생성 */
+  top:100%;
+  left:0;
+  width:100%;
+}
+
+/* 호버된 1차 메뉴 아이템의 자식 메뉴 */
+.menuBox1 > ul > li:hover > ul {
+  display:block;
+  background-color: white;
+
+}
+
+/* text-decoration: underline;
+color : red; */
